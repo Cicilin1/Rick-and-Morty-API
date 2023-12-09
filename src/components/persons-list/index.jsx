@@ -1,13 +1,15 @@
 import { Container, ContainerList } from "./style"
+import { Character } from "../characters/index"
 
 export const PersonsList =  ({data}) => {
 
-    console.log(data)
-    
     return(
         <Container>
             <ContainerList>
+            {data?.result?.map((character) => ( 
+                <Character character={character}/>
 
+            ))}
 
             </ContainerList>
         </Container>

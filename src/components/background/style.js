@@ -3,7 +3,7 @@ import BackgorundImage from "../../assets/background.svg"
 
 export const Container = styled.div`
     width: 100%;
-    height: 470px;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
