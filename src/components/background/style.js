@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import BackgorundImage from "../../assets/background.svg"
+import BackgorundImage from "../../assets/Section.png"
 
 export const Container = styled.div`
     width: 100%;
-    height: 450px;
+    height: 460px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,8 +19,7 @@ export const Container = styled.div`
         font-style: normal;
         font-weight: 900;
         line-height: 111.38px;
-         font-weight: 900;
+        font-weight: 900;
     }
-
 
 `;
