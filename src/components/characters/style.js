@@ -36,11 +36,25 @@ export const ContainerInfo = styled.div`
     }
 
     .status{ 
+        display: flex;
+        align-items: center;
         font-weight:500;
         font-size: 16px;
         line-height:26px;
         color :#ffffff;
         text-transform: capitalize;
+
+
+        span{
+            display:flex;
+            width:9px;
+            height:9px;
+            border-radius: 50%;
+            margin-right:6px;
+            background-color: ${(props) => props.backgroundColor} ;
+
+
+        }
     }
 
     .info{

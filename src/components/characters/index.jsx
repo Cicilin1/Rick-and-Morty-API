@@ -1,10 +1,18 @@
 import { Container, ContainerInfo } from "./style"
 
 export const Character = ({ character }) => {
+
+    const getStatusColor = (status) => {
+        if(status == "Alive" ) return "#55cc44";
+        if(status == "Dead" ) return "#D63D2E";
+        return "#9E9E9E"
+
+    }
+
     return (
         <Container>
             <img src={character.image} alt={character.name} />
-            <ContainerInfo>
+            <ContainerInfo backgroundColor={getStatusColor(character?.status)}>
                 <div>
                     <p className="title" >  {character.name}</p>
                     <p className="status" >

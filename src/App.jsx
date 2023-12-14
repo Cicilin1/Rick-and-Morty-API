@@ -7,25 +7,38 @@ import { api } from "./API/index"
 
 function App() {
 
-    const [data, setData ] = useState([])
+  const [data, setData] = useState([])
 
-    const fetchData = async (url) =>{
-      try{
-        setData(await api(url));
-      } catch(e){
-        console.log(e)
-      }
+  const fetchData = async (url) => {
+    try {
+      setData(await api(url));
+    } catch (e) {
+      console.log(e)
     }
+  }
 
   useEffect(() => {
     fetchData()
   }, [])
 
+
+  const fecthNextPage = async (url) => {
+    fetchData(url)
+  }
+
+  const fecthPreiousPage = async (url) => {
+    fetchData(url)
+  }
+
   return (
     <>
-      <Header/>
+      <Header />
       <BackgroundSection />
-      <PersonsList data={data}/>
+      <PersonsList data={data}
+        fecthNextPage={(url) => fecthNextPage(url)}
+        fecthPreiousPage={(url) => fecthPreiousPage(url)}
+
+      />
     </>
   )
 }
