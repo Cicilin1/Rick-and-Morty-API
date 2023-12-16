@@ -10,6 +10,11 @@ export const Container = styled.header`
         align-items: center;
         display:flex;
         gap: 31.5px;
+
+
+        @media (max-width: 520px){
+            display:none;
+        }
     }
 
     nav a{
@@ -46,6 +51,9 @@ export const Container = styled.header`
         background-color:#FF9800;
     }
 
+
+   
+    
 `
 
 

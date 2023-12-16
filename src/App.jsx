@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Header } from "./components/header"
 import { BackgroundSection } from "./components/background"
 import { PersonsList } from "./components/persons-list"
+import { Footer } from './components/footer';
 
 import { api } from "./API/index"
 
@@ -37,8 +38,8 @@ function App() {
       <PersonsList data={data}
         fecthNextPage={(url) => fecthNextPage(url)}
         fecthPreiousPage={(url) => fecthPreiousPage(url)}
-
       />
+      <Footer/>
     </>
   )
 }

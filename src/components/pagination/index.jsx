@@ -11,8 +11,6 @@ export const Pagination = ({pagination, fecthNextPage, fecthPreiousPage}) => {
     const nextDisabledButton = currentPage === pagination?.pages;
 
 
-
-
     const handPreviousPage = () => {
         setCurrentePage((prevState) => prevState - 1)
         fecthPreiousPage(pagination?.prev)

@@ -3,16 +3,31 @@ import styled from "styled-components";
 export const Container = styled.div`
     display:flex;
     width: 580px;
-    height: 240px;
+    height: 220px;
+    border-radius: 5px;
 
 
     background-color: #3c3e44;
     box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.1),
-    0px 2px 4px -1px rgba(0,0,0,0.06),
+    0px 2px 4px -1px rgba(0,0,0,0.06);
 
     img{ 
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 220px;
+        border-radius: 5px;
+    }
+
+    @media (max-width:520px){
+        flex-direction: column;
+        width: 160px;
+        height: 500px;
+    
+
+        img{ 
+            width: 160px;
+            height: 160px;
+        }
+
     }
 `;
 
@@ -52,8 +67,6 @@ export const ContainerInfo = styled.div`
             border-radius: 50%;
             margin-right:6px;
             background-color: ${(props) => props.backgroundColor} ;
-
-
         }
     }
 
@@ -73,6 +86,16 @@ export const ContainerInfo = styled.div`
     }
 
     :hover{
-            color:#ff9800
+        color:#ff9800
+    }
+
+
+    @media (max-width:520px){
+        .title{
+        font-size: 20px;
+        margin-bottom: 0.8rem;
         }
+    }
+
+    
 `;

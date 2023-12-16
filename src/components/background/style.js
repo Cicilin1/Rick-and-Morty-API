@@ -3,14 +3,15 @@ import BackgorundImage from "../../assets/Section.png"
 
 export const Container = styled.div`
     width: 100%;
-    height: 460px;
+    height: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(${BackgorundImage});
-    background-position: center;
+    background-position:center;
     background-size:cover;
-    
+    background-repeat: no-repeat;
+
     h1{
         color: #202329;
         text-align: center;
@@ -20,6 +21,15 @@ export const Container = styled.div`
         font-weight: 900;
         line-height: 111.38px;
         font-weight: 900;
+    }
+
+    @media (max-width:520px){
+        height: 300px;
+
+
+        h1{
+            font-size: 50px;
+        }
     }
 
 `;
