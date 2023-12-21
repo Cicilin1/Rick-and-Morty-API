@@ -33,7 +33,7 @@ Certifique-se de ter as dependências necessárias instaladas. Você pode usar o
 bash
 Copy code
 ```
-npm install
+yarn install
 ```
 
 
@@ -45,7 +45,7 @@ Inicie a aplicação localmente.
 bash
 Copy code
 ```
-npm start
+yarn dev
 ```
 Acesse a aplicação em seu navegador: http://localhost:3000.
 
