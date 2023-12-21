@@ -10,6 +10,9 @@ Funcionalidades
 3. **Episódios e Localizações:** Além dos personagens, explore informações sobre episódios individuais e as diversas localizações apresentadas na série.
 
 
+Acesse o projeto em: https://rick-morty-app-azure.vercel.app/
+
+
 <br>
 
 ## Como Usar
