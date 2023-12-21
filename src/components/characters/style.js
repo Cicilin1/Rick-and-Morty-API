@@ -20,7 +20,7 @@ export const Container = styled.div`
     @media (max-width:520px){
         flex-direction: column;
         width: 160px;
-        height: 500px;
+        height: 530px;
     
 
         img{ 
