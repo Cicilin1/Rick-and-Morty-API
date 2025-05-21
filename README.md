@@ -50,7 +50,6 @@ Copy code
 ```
 yarn dev
 ```
-Acesse a aplicação em seu navegador: http://localhost:3000.
 
 <br>
 
